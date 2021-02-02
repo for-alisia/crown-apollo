@@ -1,14 +1,12 @@
+/** Libraries */
 import React from 'react';
 import { Mutation } from 'react-apollo';
-import { gql } from 'apollo-boost';
 
+/** Component */
 import CollectionItem from './collection-item.component';
 
-const ADD_ITEM_TO_CART = gql`
-  mutation AddItemToCart($item: Item!) {
-    addItemToCart(item: $item) @client
-  }
-`;
+/** Selectors */
+import { ADD_ITEM_TO_CART } from '../../graphql/selectors';
 
 const CollectionItemContainer = (props) => (
   <Mutation mutation={ADD_ITEM_TO_CART}>

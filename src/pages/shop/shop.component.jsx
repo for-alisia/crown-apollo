@@ -1,6 +1,8 @@
+/** Libraries */
 import React from 'react';
 import { Route } from 'react-router-dom';
 
+/** Components */
 import { default as CollectionsOverview } from '../../components/collections-overview/collections-overview.container';
 import { default as CollectionPage } from '../collection/collection.container';
 

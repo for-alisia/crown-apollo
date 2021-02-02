@@ -1,7 +1,10 @@
+/** Libraries */
 import React from 'react';
 
+/** Components */
 import CustomButton from '../custom-button/custom-button.component';
 
+/** Styles */
 import './collection-item.styles.scss';
 
 const CollectionItem = ({ item, addItem }) => {

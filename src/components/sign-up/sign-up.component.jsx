@@ -1,10 +1,14 @@
+/** Libraries */
 import React from 'react';
 
+/** Components */
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
 
+/** Utils */
 import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
 
+/** Styles */
 import './sign-up.styles.scss';
 
 class SignUp extends React.Component {
@@ -15,11 +19,11 @@ class SignUp extends React.Component {
       displayName: '',
       email: '',
       password: '',
-      confirmPassword: ''
+      confirmPassword: '',
     };
   }
 
-  handleSubmit = async event => {
+  handleSubmit = async (event) => {
     event.preventDefault();
 
     const { displayName, email, password, confirmPassword } = this.state;
@@ -41,14 +45,14 @@ class SignUp extends React.Component {
         displayName: '',
         email: '',
         password: '',
-        confirmPassword: ''
+        confirmPassword: '',
       });
     } catch (error) {
       console.error(error);
     }
   };
 
-  handleChange = event => {
+  handleChange = (event) => {
     const { name, value } = event.target;
 
     this.setState({ [name]: value });

@@ -1,5 +1,7 @@
+/** Libraries */
 import React from 'react';
 
+/** Styles */
 import './spinner.styles.scss';
 
 const Spinner = () => (

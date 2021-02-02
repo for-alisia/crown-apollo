@@ -1,9 +1,13 @@
+// @ts-nocheck
+/** Libraries */
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
+/** Components */
 import CustomButton from '../custom-button/custom-button.component';
 import CartItem from '../cart-item/cart-item.component';
 
+/** Styles */
 import './cart-dropdown.styles.scss';
 
 const CartDropdown = ({ cartItems, history, toggleCartHidden }) => (

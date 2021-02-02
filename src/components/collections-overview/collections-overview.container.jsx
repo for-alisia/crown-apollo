@@ -1,25 +1,14 @@
 // @ts-nocheck
+/** Libraries */
 import React from 'react';
 import { Query } from 'react-apollo';
-import { gql } from 'apollo-boost';
 
+/** Selectors */
+import { GET_COLLECTIONS } from '../../graphql/selectors';
+
+/** Components */
 import CollectionOverview from './collections-overview.component';
 import Spinner from '../spinner/spinner.component';
-
-const GET_COLLECTIONS = gql`
-  {
-    collections {
-      id
-      title
-      items {
-        id
-        name
-        price
-        imageUrl
-      }
-    }
-  }
-`;
 
 const CollectionsOverviewContainer = () => (
   <Query query={GET_COLLECTIONS}>

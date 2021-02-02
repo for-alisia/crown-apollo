@@ -1,7 +1,10 @@
+/** Libraries */
 import React from 'react';
 
+/** Components */
 import CollectionItem from '../../components/collection-item/collection-item.component';
 
+/** Styles */
 import './collection.styles.scss';
 
 const CollectionPage = ({ collection }) => {
